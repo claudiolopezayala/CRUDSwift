@@ -1,10 +1,3 @@
-//
-//  User.swift
-//  POO
-//
-//  Created by Braulio Alejandro Navarrete Horta on 28/03/23.
-//
-
 import Foundation
 
 class User{
