@@ -1,9 +1,3 @@
-//
-//  ShowInventoryViewController.swift
-//  Proyecto2P
-//
-//  Created by José Antonio Gonzalez Ruiz on 21/05/23.
-//
 
 import Cocoa
 
