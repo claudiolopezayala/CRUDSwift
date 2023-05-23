@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505B09F02A1D141100226EB7 /* BuyFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B09EF2A1D141100226EB7 /* BuyFormViewController.swift */; };
 		505E8C572A1C3B150087F008 /* ShowFilteredSalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E8C562A1C3B150087F008 /* ShowFilteredSalesViewController.swift */; };
 		505E8C592A1C43070087F008 /* ShowBuysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E8C582A1C43070087F008 /* ShowBuysViewController.swift */; };
 		5061DDC22A1185FB004FB329 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5061DDC12A1185FB004FB329 /* Sales.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505B09EF2A1D141100226EB7 /* BuyFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFormViewController.swift; sourceTree = "<group>"; };
 		505E8C562A1C3B150087F008 /* ShowFilteredSalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFilteredSalesViewController.swift; sourceTree = "<group>"; };
 		505E8C582A1C43070087F008 /* ShowBuysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBuysViewController.swift; sourceTree = "<group>"; };
 		5061DDC12A1185FB004FB329 /* Sales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				505E8C582A1C43070087F008 /* ShowBuysViewController.swift */,
 				50E3ABFA2A1B2D100021CF6F /* ShowInventoryViewController.swift */,
 				50E753E12A16DB73005F3B12 /* BaseForm.swift */,
+				505B09EF2A1D141100226EB7 /* BuyFormViewController.swift */,
 				5063FA722A1049FF00549F14 /* Inventory.swift */,
 				5061DDC12A1185FB004FB329 /* Sales.swift */,
 				5061DDC32A118DC2004FB329 /* Buys.swift */,
@@ -193,6 +196,7 @@
 				509A438B2A0EFF8C00E940EC /* Product.swift in Sources */,
 				509A438D2A100B2400E940EC /* Users.swift in Sources */,
 				509A43832A0EFD8D00E940EC /* Buy.swift in Sources */,
+				505B09F02A1D141100226EB7 /* BuyFormViewController.swift in Sources */,
 				FBBE18FD2A0B344300942B6C /* ViewController.swift in Sources */,
 				FBBE18FB2A0B344300942B6C /* AppDelegate.swift in Sources */,
 				50D3BC212A0EDF5E007C6344 /* User.swift in Sources */,

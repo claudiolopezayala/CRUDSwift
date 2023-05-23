@@ -2586,8 +2586,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="XkC-KW-H9D">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="706554671.68824995">
-                                        <!--2023-05-23 17:11:11 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="706555035.50802195">
+                                        <!--2023-05-23 17:17:15 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -2636,10 +2636,10 @@
             </objects>
             <point key="canvasLocation" x="2121" y="1307.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Buy Form View Controller-->
         <scene sceneID="5JI-cU-AvZ">
             <objects>
-                <viewController id="hrn-9M-PAK" sceneMemberID="viewController">
+                <viewController id="hrn-9M-PAK" customClass="BuyFormViewController" customModule="Proyecto2P" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ceL-dJ-9IX">
                         <rect key="frame" x="0.0" y="0.0" width="707" height="535"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2649,24 +2649,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="923" id="wPI-a9-oUs"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywo-sO-G4c">
-                                <rect key="frame" x="18" y="443" width="16" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Id" id="e6i-WW-Rfb">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKx-b5-LDe">
-                                <rect key="frame" x="20" y="414" width="329" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="RdT-dg-Rjk">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FwF-lb-NkJ">
                                 <rect key="frame" x="18" y="390" width="126" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -2684,6 +2666,9 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="txtProductNameTriggered:" target="hrn-9M-PAK" id="zoc-hg-oPh"/>
+                                </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-vd-E9c">
                                 <rect key="frame" x="18" y="337" width="76" height="16"/>
@@ -2720,6 +2705,9 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="txtPriceTriggered:" target="hrn-9M-PAK" id="of6-Fm-ILE"/>
+                                </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-Yx-W3r">
                                 <rect key="frame" x="18" y="180" width="40" height="16"/>
@@ -2774,6 +2762,9 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="txtAmountTriggered:" target="hrn-9M-PAK" id="VC8-xv-CVP"/>
+                                </connections>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-jp-DlB">
                                 <rect key="frame" x="143" y="42" width="90" height="32"/>
@@ -2783,6 +2774,9 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <color key="bezelColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="btnDoneClicked:" target="hrn-9M-PAK" id="w9i-Tp-YoL"/>
+                                </connections>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCl-fq-tSS">
                                 <rect key="frame" x="375" y="-55" width="332" height="411"/>
@@ -2800,6 +2794,16 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="btnDone" destination="hJ2-jp-DlB" id="ZaI-ng-WKX"/>
+                        <outlet property="txtAmount" destination="oQL-w7-h2b" id="KjB-Ls-OCw"/>
+                        <outlet property="txtCategory" destination="8Tc-DY-cxc" id="qAm-jw-jqf"/>
+                        <outlet property="txtDescription" destination="0ee-NQ-WlT" id="9Dj-rO-WUQ"/>
+                        <outlet property="txtId" destination="oQL-w7-h2b" id="3qs-Wa-9On"/>
+                        <outlet property="txtPrice" destination="sgW-aY-QES" id="UJ3-NP-IDa"/>
+                        <outlet property="txtProductName" destination="FYK-u0-Ahl" id="KFK-dB-nAC"/>
+                        <outlet property="txtTotal" destination="Eqa-Nh-YcN" id="SuB-He-SNf"/>
+                    </connections>
                 </viewController>
                 <customObject id="8Zd-s6-hWq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

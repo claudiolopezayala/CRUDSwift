@@ -88,6 +88,15 @@ class Inventory {
     public static func changeSellPriceById(_ newSellPrice:Double,_ id:Int){
         instance.inventory[id].sellPrice = newSellPrice;
     }
+    
+    public static func getOneByName (_ name: String) throws -> Product{
+        for product in instance.inventory{
+            if (product.name == name){
+                return product
+            }
+        }
+        throw InventoryErrors.productNotFound
+    }
 }
 
 enum InventoryErrors: Error{

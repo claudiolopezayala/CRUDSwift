@@ -52,10 +52,8 @@ class SaleFormViewController: BaseForm {
             txtIdProduct.integerValue = saleToDisplay.productId;
             txtPrice.doubleValue = saleToDisplay.price;
             txtAmount.integerValue = saleToDisplay.amount;
-            txtSubtotal.isEditable = false;
             txtSubtotal.doubleValue = saleToDisplay.subtotal;
             txtIva.doubleValue = saleToDisplay.iva;
-            txtTotal.isEditable = false;
             txtTotal.doubleValue = saleToDisplay.total;
             
             
@@ -78,7 +76,7 @@ class SaleFormViewController: BaseForm {
         let iva = txtIva.doubleValue;
         let newSale = try Sale(clientId: clientId, productId: productId, amount: amount, price: price, iva: iva);
         
-        try Sales.addSale(newSale);
+        Sales.addSale(newSale);
         
     }
     
